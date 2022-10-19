@@ -2,10 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ *_isalpha - check for alphabets
+ * @c: character to be checked
+ * Return: 1 if character is a letter, 0 otherwise
  */
-int main(void)
+int _isalpha(int c)
 {
-	return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
